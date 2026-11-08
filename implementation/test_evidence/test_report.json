@@ -1,0 +1,373 @@
+{
+  "machine": {
+    "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+    "logical_cores": 2,
+    "ram_gb": 8.4,
+    "os": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39",
+    "python": "3.13.16",
+    "torch": "2.14.1+cu130",
+    "torch_threads": 2,
+    "gpu_used": false
+  },
+  "synthetic_images": false,
+  "smoke_model": false,
+  "n_images": 10,
+  "checkpoint": "M1_seed42",
+  "cases": [
+    {
+      "id": "UT01",
+      "kind": "unit",
+      "desc": "Normalisation of an image equal to the ImageNet channel means",
+      "expected": "Output is zero in every channel (within 1e-5)",
+      "status": "Passed",
+      "message": "",
+      "seconds": 0.00052642822265625
+    },
+    {
+      "id": "UT02",
+      "kind": "unit",
+      "desc": "Output shapes of the multimodal network for a batch of 3 images",
+      "expected": "Logits 3 x 5 and severity of length 3",
+      "status": "Passed",
+      "message": "",
+      "seconds": 0.16730952262878418
+    },
+    {
+      "id": "UT03",
+      "kind": "unit",
+      "desc": "Severity score for extreme inputs (very large and very small activations)",
+      "expected": "Always between 1 and 5",
+      "status": "Passed",
+      "message": "",
+      "seconds": 0.21975207328796387
+    },
+    {
+      "id": "UT04",
+      "kind": "unit",
+      "desc": "Class probabilities of one prediction",
+      "expected": "Non-negative and sum to 1 (within 1e-5)",
+      "status": "Passed",
+      "message": "",
+      "seconds": 0.14654135704040527
+    },
+    {
+      "id": "UT05",
+      "kind": "unit",
+      "desc": "Grad-CAM map for one image",
+      "expected": "Same size as the input, values in [0, 1], no NaN",
+      "status": "Passed",
+      "message": "",
+      "seconds": 0.13805699348449707
+    },
+    {
+      "id": "UT06",
+      "kind": "unit",
+      "desc": "Additivity of the exact Shapley values",
+      "expected": "Base value plus the four values equals the prediction (within 1e-6)",
+      "status": "Passed",
+      "message": "",
+      "seconds": 0.039093732833862305
+    },
+    {
+      "id": "UT07",
+      "kind": "unit",
+      "desc": "Min-Max scaled weather profiles held by the application",
+      "expected": "All 16 profiles lie in [0, 1] for every feature",
+      "status": "Passed",
+      "message": "",
+      "seconds": 2.0503997802734375e-05
+    },
+    {
+      "id": "UT08",
+      "kind": "unit",
+      "desc": "Explanation text for a prediction",
+      "expected": "Names the predicted class, gives the probability, and states that the weather is an approximation that does not prove a cause",
+      "status": "Passed",
+      "message": "",
+      "seconds": 5.626678466796875e-05
+    },
+    {
+      "id": "UT09",
+      "kind": "unit",
+      "desc": "Explanation text when no weather variable raises the probability",
+      "expected": "Text states that no variable raised the probability and has no lowering clause error",
+      "status": "Passed",
+      "message": "",
+      "seconds": 1.6689300537109375e-05
+    },
+    {
+      "id": "UT10",
+      "kind": "unit",
+      "desc": "Handling of images in other colour modes (greyscale, RGBA, palette)",
+      "expected": "Each is converted and diagnosed without error",
+      "status": "Passed",
+      "message": "",
+      "seconds": 0.47789525985717773
+    },
+    {
+      "id": "UT11",
+      "kind": "unit",
+      "desc": "Handling of very small (16 x 16) and very large (3000 x 2000) images",
+      "expected": "Both are resized and diagnosed without error",
+      "status": "Passed",
+      "message": "",
+      "seconds": 0.6588382720947266
+    },
+    {
+      "id": "UT12",
+      "kind": "unit",
+      "desc": "Every region and season combination (4 x 4 = 16) for one image",
+      "expected": "All 16 profiles are found and give a valid prediction",
+      "status": "Passed",
+      "message": "",
+      "seconds": 2.5427463054656982
+    },
+    {
+      "id": "UT13",
+      "kind": "unit",
+      "desc": "Repeatability: the same image and profile twice",
+      "expected": "Identical class probabilities",
+      "status": "Passed",
+      "message": "",
+      "seconds": 0.3013162612915039
+    },
+    {
+      "id": "UT14",
+      "kind": "unit",
+      "desc": "Unknown region or season passed to the diagnosis function",
+      "expected": "Rejected with an error and not answered silently",
+      "status": "Passed",
+      "message": "",
+      "seconds": 0.0047149658203125
+    },
+    {
+      "id": "IT01",
+      "kind": "integration",
+      "desc": "Loading of the saved model, scaling limits, weather profiles and background set from the results folder",
+      "expected": "Bundle contains the model in evaluation mode, 16 profiles and a background of weather vectors",
+      "status": "Passed",
+      "message": "",
+      "seconds": 0.15001511573791504
+    },
+    {
+      "id": "IT02",
+      "kind": "integration",
+      "desc": "Start of the Streamlit server and first page",
+      "expected": "Server answers the health check; page shows the title and the prototype warning",
+      "status": "Passed",
+      "message": "",
+      "seconds": 0.009618759155273438
+    },
+    {
+      "id": "IT03",
+      "kind": "integration",
+      "desc": "Upload of one leaf photograph through the browser",
+      "expected": "Prediction heading, severity or severity note, heatmap, two charts and the statement appear",
+      "status": "Passed",
+      "message": "",
+      "seconds": 1.5892353057861328
+    },
+    {
+      "id": "IT04",
+      "kind": "integration",
+      "desc": "Agreement between the browser result and a direct call of the diagnosis function for the same image and profile",
+      "expected": "Same predicted class and the same probability in the statement",
+      "status": "Passed",
+      "message": "",
+      "seconds": 7.000576496124268
+    },
+    {
+      "id": "IT05",
+      "kind": "integration",
+      "desc": "Change of region and season after an upload",
+      "expected": "Page recomputes and still shows a complete result",
+      "status": "Passed",
+      "message": "",
+      "seconds": 0.47171688079833984
+    },
+    {
+      "id": "IT06",
+      "kind": "integration",
+      "desc": "Upload of every sample leaf photograph",
+      "expected": "Every upload gives a complete result without an error message",
+      "status": "Passed",
+      "message": "",
+      "seconds": 27.515985012054443
+    },
+    {
+      "id": "IT07",
+      "kind": "integration",
+      "desc": "Upload of a file type that is not allowed (text file)",
+      "expected": "File is refused by the uploader and no diagnosis is shown",
+      "status": "Passed",
+      "message": "",
+      "seconds": 4.5011351108551025
+    },
+    {
+      "id": "IT08",
+      "kind": "integration",
+      "desc": "Upload of a corrupted image file (valid extension, damaged content)",
+      "expected": "A clear message is shown and the page does not crash with a stack trace",
+      "status": "Passed",
+      "message": "",
+      "seconds": 5.533447504043579
+    }
+  ],
+  "performance": {
+    "server_start_seconds": 1.0852274894714355,
+    "first_request_seconds": 1.4119644165039062,
+    "function_level": {
+      "total": {
+        "n": 20,
+        "mean": 0.15740464220001513,
+        "sd": 0.017571976278594983,
+        "median": 0.1545701635001251,
+        "min": 0.12814940399994157,
+        "max": 0.19759042400005455,
+        "p95": 0.18526113100006114
+      },
+      "gradcam": {
+        "n": 20,
+        "mean": 0.11501269115000241,
+        "sd": 0.012537817774513413,
+        "median": 0.11418668750002325,
+        "min": 0.09364626299998235,
+        "max": 0.14582958100004362,
+        "p95": 0.12925634499993066
+      },
+      "shap": {
+        "n": 20,
+        "mean": 0.00580334739997852,
+        "sd": 0.0013129384724619476,
+        "median": 0.005610322500047005,
+        "min": 0.00412621800001034,
+        "max": 0.008333668999966903,
+        "p95": 0.008238364999897385
+      },
+      "text": {
+        "n": 20,
+        "mean": 6.635410001081255e-05,
+        "sd": 1.921382876313397e-05,
+        "median": 5.804850002277817e-05,
+        "min": 5.027800011703221e-05,
+        "max": 0.00012188699997750518,
+        "p95": 0.00010994700005539926
+      },
+      "other": {
+        "mean": 0.03652224955002338
+      }
+    },
+    "end_to_end_seconds": [
+      1.2372043132781982,
+      1.0400269031524658,
+      1.140420913696289,
+      1.1878888607025146,
+      1.1026034355163574,
+      1.1017000675201416,
+      1.2161648273468018,
+      1.1076350212097168,
+      1.2265944480895996,
+      1.0589542388916016
+    ],
+    "end_to_end": {
+      "n": 10,
+      "mean": 1.1419193029403687,
+      "sd": 0.07108754852427045,
+      "median": 1.124027967453003,
+      "min": 1.0400269031524658,
+      "max": 1.2372043132781982,
+      "p95": 1.2372043132781982
+    },
+    "by_image_size": {
+      "224 x 224 pixels": {
+        "mean": 1.1690351168314617,
+        "file_mb": 0.024202
+      },
+      "800 x 600 pixels": {
+        "mean": 1.1790876388549805,
+        "file_mb": 0.2271
+      },
+      "1600 x 1200 pixels": {
+        "mean": 1.2486307621002197,
+        "file_mb": 0.904564
+      },
+      "4000 x 3000 pixels": {
+        "mean": 1.283921241760254,
+        "file_mb": 5.648091
+      }
+    },
+    "server_memory_mb": 1386.74176
+  },
+  "images": [
+    {
+      "file": "CBB_1051688339.jpg",
+      "label": "CBB",
+      "pred": "CBB",
+      "prob": 0.745276153087616
+    },
+    {
+      "file": "CBB_1071960213.jpg",
+      "label": "CBB",
+      "pred": "Healthy",
+      "prob": 0.6597917675971985
+    },
+    {
+      "file": "CBSD_1008244905.jpg",
+      "label": "CBSD",
+      "pred": "CBSD",
+      "prob": 0.9999097585678101
+    },
+    {
+      "file": "CBSD_1012623980.jpg",
+      "label": "CBSD",
+      "pred": "CBB",
+      "prob": 0.7176085114479065
+    },
+    {
+      "file": "CGM_1048581072.jpg",
+      "label": "CGM",
+      "pred": "CMD",
+      "prob": 0.7436631917953491
+    },
+    {
+      "file": "CGM_1054048740.jpg",
+      "label": "CGM",
+      "pred": "Healthy",
+      "prob": 0.7700459361076355
+    },
+    {
+      "file": "CMD_1001742395.jpg",
+      "label": "CMD",
+      "pred": "CMD",
+      "prob": 0.872839093208313
+    },
+    {
+      "file": "CMD_1001749118.jpg",
+      "label": "CMD",
+      "pred": "CMD",
+      "prob": 0.9418720006942749
+    },
+    {
+      "file": "Healthy_1033962303.jpg",
+      "label": "Healthy",
+      "pred": "CBSD",
+      "prob": 0.430548757314682
+    },
+    {
+      "file": "Healthy_1060644080.jpg",
+      "label": "Healthy",
+      "pred": "Healthy",
+      "prob": 0.603727400302887
+    }
+  ],
+  "summary": {
+    "unit": {
+      "total": 14,
+      "passed": 14
+    },
+    "integration": {
+      "total": 8,
+      "passed": 8
+    }
+  }
+}

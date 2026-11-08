@@ -1,0 +1,11 @@
+torch>=2.3
+torchvision>=0.18
+numpy
+pandas
+scipy
+scikit-learn
+pillow
+matplotlib
+requests
+shap
+streamlit
