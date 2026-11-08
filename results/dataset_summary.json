@@ -1,0 +1,55 @@
+{
+  "n_listed": 21397,
+  "n_unreadable": 0,
+  "n_duplicates_removed": 0,
+  "n_final": 21397,
+  "class_names": [
+    "CBB",
+    "CBSD",
+    "CGM",
+    "CMD",
+    "Healthy"
+  ],
+  "class_counts_total": {
+    "CBB": 1087,
+    "CBSD": 2189,
+    "CGM": 2386,
+    "CMD": 13158,
+    "Healthy": 2577
+  },
+  "class_counts_by_partition": {
+    "train": {
+      "CBB": 870,
+      "CBSD": 1751,
+      "CGM": 1909,
+      "CMD": 10526,
+      "Healthy": 2061
+    },
+    "val": {
+      "CBB": 109,
+      "CBSD": 219,
+      "CGM": 238,
+      "CMD": 1316,
+      "Healthy": 258
+    },
+    "test": {
+      "CBB": 108,
+      "CBSD": 219,
+      "CGM": 239,
+      "CMD": 1316,
+      "Healthy": 258
+    }
+  },
+  "partition_sizes": {
+    "train": 17117,
+    "val": 2140,
+    "test": 2140
+  },
+  "class_weights": {
+    "CBB": 3.934942528735632,
+    "CBSD": 1.9551113649343232,
+    "CGM": 1.7932949188056575,
+    "CMD": 0.3252327569827095,
+    "Healthy": 1.6610383309073264
+  }
+}

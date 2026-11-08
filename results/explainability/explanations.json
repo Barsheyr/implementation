@@ -1,0 +1,322 @@
+[
+  {
+    "image_id": "1051688339.jpg",
+    "true": "CBB",
+    "pred": "CBB",
+    "kind": "correct",
+    "confidence": 0.76094651222229,
+    "severity_estimate": null,
+    "region": "the outer parts of the leaf on both sides",
+    "phi": {
+      "T2M": -2.404054005940752e-05,
+      "RH2M": 0.0010634859402974444,
+      "PRECTOTCORR": 0.001313239336013794,
+      "ALLSKY_SFC_SW_DWN": -0.000134199857711792
+    },
+    "text": "The model predicts Cassava Bacterial Blight (CBB) with a probability of 76%. In the image, the model paid most attention to the outer parts of the leaf on both sides. Among the weather variables, total rainfall raised the predicted probability most (by 0.1 percentage points), and mean solar irradiance lowered it most (by 0.0 percentage points). The weather values are a regional and seasonal approximation, so this describes how the model used its inputs and does not show that the weather caused the disease."
+  },
+  {
+    "image_id": "1085950509.jpg",
+    "true": "CBB",
+    "pred": "CBB",
+    "kind": "correct",
+    "confidence": 0.5557070970535278,
+    "severity_estimate": null,
+    "region": "the centre of the leaf",
+    "phi": {
+      "T2M": -8.466839790344237e-05,
+      "RH2M": 0.0007751683394114177,
+      "PRECTOTCORR": 0.0008279681205749512,
+      "ALLSKY_SFC_SW_DWN": 0.0016058882077534993
+    },
+    "text": "The model predicts Cassava Bacterial Blight (CBB) with a probability of 56%. In the image, the model paid most attention to the centre of the leaf. Among the weather variables, mean solar irradiance raised the predicted probability most (by 0.2 percentage points), and mean temperature lowered it most (by 0.0 percentage points). The weather values are a regional and seasonal approximation, so this describes how the model used its inputs and does not show that the weather caused the disease."
+  },
+  {
+    "image_id": "1071960213.jpg",
+    "true": "CBB",
+    "pred": "Healthy",
+    "kind": "wrong",
+    "confidence": 0.4119727909564972,
+    "severity_estimate": null,
+    "region": "the upper part of the leaf",
+    "phi": {
+      "T2M": -0.0012026503682136536,
+      "RH2M": -0.0009972626964251199,
+      "PRECTOTCORR": -0.0012539600332578025,
+      "ALLSKY_SFC_SW_DWN": -0.004308976233005524
+    },
+    "text": "The model predicts Healthy (Healthy) with a probability of 41%. In the image, the model paid most attention to the upper part of the leaf. No weather variable raised the predicted probability (mean relative humidity changed it by -0.1 percentage points), and mean solar irradiance lowered it most (by 0.4 percentage points). The weather values are a regional and seasonal approximation, so this describes how the model used its inputs and does not show that the weather caused the disease."
+  },
+  {
+    "image_id": "1181678723.jpg",
+    "true": "CBB",
+    "pred": "Healthy",
+    "kind": "wrong",
+    "confidence": 0.6897481083869934,
+    "severity_estimate": null,
+    "region": "the lower part of the leaf",
+    "phi": {
+      "T2M": -0.0015131582816441855,
+      "RH2M": -0.0016261488199234009,
+      "PRECTOTCORR": -0.00042903920014699304,
+      "ALLSKY_SFC_SW_DWN": -0.0015261818965276082
+    },
+    "text": "The model predicts Healthy (Healthy) with a probability of 69%. In the image, the model paid most attention to the lower part of the leaf. No weather variable raised the predicted probability (total rainfall changed it by -0.0 percentage points), and mean relative humidity lowered it most (by 0.2 percentage points). The weather values are a regional and seasonal approximation, so this describes how the model used its inputs and does not show that the weather caused the disease."
+  },
+  {
+    "image_id": "1008244905.jpg",
+    "true": "CBSD",
+    "pred": "CBSD",
+    "kind": "correct",
+    "confidence": 0.9973520040512085,
+    "severity_estimate": null,
+    "region": "the outer parts of the leaf on both sides",
+    "phi": {
+      "T2M": 3.073116143544515e-05,
+      "RH2M": -4.7137339909871425e-06,
+      "PRECTOTCORR": 3.638366858164469e-05,
+      "ALLSKY_SFC_SW_DWN": 4.7569473584493004e-05
+    },
+    "text": "The model predicts Cassava Brown Streak Disease (CBSD) with a probability of 100%. In the image, the model paid most attention to the outer parts of the leaf on both sides. Among the weather variables, mean solar irradiance raised the predicted probability most (by 0.0 percentage points), and mean relative humidity lowered it most (by 0.0 percentage points). The weather values are a regional and seasonal approximation, so this describes how the model used its inputs and does not show that the weather caused the disease."
+  },
+  {
+    "image_id": "1016415263.jpg",
+    "true": "CBSD",
+    "pred": "CBSD",
+    "kind": "correct",
+    "confidence": 0.6751914024353027,
+    "severity_estimate": null,
+    "region": "the lower part of the leaf",
+    "phi": {
+      "T2M": 0.0030756543080012006,
+      "RH2M": 0.003334149718284607,
+      "PRECTOTCORR": -0.0119106521209081,
+      "ALLSKY_SFC_SW_DWN": 0.017463738719622292
+    },
+    "text": "The model predicts Cassava Brown Streak Disease (CBSD) with a probability of 68%. In the image, the model paid most attention to the lower part of the leaf. Among the weather variables, mean solar irradiance raised the predicted probability most (by 1.7 percentage points), and total rainfall lowered it most (by 1.2 percentage points). The weather values are a regional and seasonal approximation, so this describes how the model used its inputs and does not show that the weather caused the disease."
+  },
+  {
+    "image_id": "1012623980.jpg",
+    "true": "CBSD",
+    "pred": "CBB",
+    "kind": "wrong",
+    "confidence": 0.8504783511161804,
+    "severity_estimate": null,
+    "region": "the lower part of the leaf",
+    "phi": {
+      "T2M": 0.0035866697629292803,
+      "RH2M": 0.0007190306981404623,
+      "PRECTOTCORR": 0.0005674660205841064,
+      "ALLSKY_SFC_SW_DWN": 0.001345922549565633
+    },
+    "text": "The model predicts Cassava Bacterial Blight (CBB) with a probability of 85%. In the image, the model paid most attention to the lower part of the leaf. Among the weather variables, mean temperature raised the predicted probability most (by 0.4 percentage points). The weather values are a regional and seasonal approximation, so this describes how the model used its inputs and does not show that the weather caused the disease."
+  },
+  {
+    "image_id": "1078779441.jpg",
+    "true": "CBSD",
+    "pred": "CBB",
+    "kind": "wrong",
+    "confidence": 0.7631142735481262,
+    "severity_estimate": null,
+    "region": "the centre of the leaf",
+    "phi": {
+      "T2M": 0.0011356423298517864,
+      "RH2M": 0.00190750261147817,
+      "PRECTOTCORR": 0.00022712846597035727,
+      "ALLSKY_SFC_SW_DWN": 0.0006694147984186808
+    },
+    "text": "The model predicts Cassava Bacterial Blight (CBB) with a probability of 76%. In the image, the model paid most attention to the centre of the leaf. Among the weather variables, mean relative humidity raised the predicted probability most (by 0.2 percentage points). The weather values are a regional and seasonal approximation, so this describes how the model used its inputs and does not show that the weather caused the disease."
+  },
+  {
+    "image_id": "1083681960.jpg",
+    "true": "CGM",
+    "pred": "CGM",
+    "kind": "correct",
+    "confidence": 0.7833011150360107,
+    "severity_estimate": null,
+    "region": "the outer parts of the leaf on both sides",
+    "phi": {
+      "T2M": 0.0016434242328008015,
+      "RH2M": -0.0004998296499252319,
+      "PRECTOTCORR": 0.0074341247479120885,
+      "ALLSKY_SFC_SW_DWN": -0.005779400467872619
+    },
+    "text": "The model predicts Cassava Green Mottle (CGM) with a probability of 78%. In the image, the model paid most attention to the outer parts of the leaf on both sides. Among the weather variables, total rainfall raised the predicted probability most (by 0.7 percentage points), and mean solar irradiance lowered it most (by 0.6 percentage points). The weather values are a regional and seasonal approximation, so this describes how the model used its inputs and does not show that the weather caused the disease."
+  },
+  {
+    "image_id": "109060770.jpg",
+    "true": "CGM",
+    "pred": "CGM",
+    "kind": "correct",
+    "confidence": 0.925207257270813,
+    "severity_estimate": null,
+    "region": "the outer parts of the leaf on both sides",
+    "phi": {
+      "T2M": -0.0003325740496317546,
+      "RH2M": 0.00032817324002583825,
+      "PRECTOTCORR": -0.0007221301396687826,
+      "ALLSKY_SFC_SW_DWN": 0.0020532111326853433
+    },
+    "text": "The model predicts Cassava Green Mottle (CGM) with a probability of 93%. In the image, the model paid most attention to the outer parts of the leaf on both sides. Among the weather variables, mean solar irradiance raised the predicted probability most (by 0.2 percentage points), and total rainfall lowered it most (by 0.1 percentage points). The weather values are a regional and seasonal approximation, so this describes how the model used its inputs and does not show that the weather caused the disease."
+  },
+  {
+    "image_id": "1048581072.jpg",
+    "true": "CGM",
+    "pred": "CMD",
+    "kind": "wrong",
+    "confidence": 0.6043457984924316,
+    "severity_estimate": null,
+    "region": "the centre of the leaf",
+    "phi": {
+      "T2M": 0.0016289601723353067,
+      "RH2M": -0.0001391718784968058,
+      "PRECTOTCORR": 0.0037150035301844278,
+      "ALLSKY_SFC_SW_DWN": 2.098580201466882e-05
+    },
+    "text": "The model predicts Cassava Mosaic Disease (CMD) with a probability of 60%. In the image, the model paid most attention to the centre of the leaf. Among the weather variables, total rainfall raised the predicted probability most (by 0.4 percentage points), and mean relative humidity lowered it most (by 0.0 percentage points). The weather values are a regional and seasonal approximation, so this describes how the model used its inputs and does not show that the weather caused the disease."
+  },
+  {
+    "image_id": "1054048740.jpg",
+    "true": "CGM",
+    "pred": "Healthy",
+    "kind": "wrong",
+    "confidence": 0.770262598991394,
+    "severity_estimate": null,
+    "region": "the centre of the leaf",
+    "phi": {
+      "T2M": -0.0002730836470921834,
+      "RH2M": -0.0005077868700027466,
+      "PRECTOTCORR": 3.1198064486185673e-05,
+      "ALLSKY_SFC_SW_DWN": -0.004882728060086568
+    },
+    "text": "The model predicts Healthy (Healthy) with a probability of 77%. In the image, the model paid most attention to the centre of the leaf. Among the weather variables, total rainfall raised the predicted probability most (by 0.0 percentage points), and mean solar irradiance lowered it most (by 0.5 percentage points). The weather values are a regional and seasonal approximation, so this describes how the model used its inputs and does not show that the weather caused the disease."
+  },
+  {
+    "image_id": "1001742395.jpg",
+    "true": "CMD",
+    "pred": "CMD",
+    "kind": "correct",
+    "confidence": 0.5734196901321411,
+    "severity_estimate": null,
+    "region": "the centre of the leaf",
+    "phi": {
+      "T2M": -7.886687914530435e-05,
+      "RH2M": 0.000650485356648763,
+      "PRECTOTCORR": -0.0035662253697713213,
+      "ALLSKY_SFC_SW_DWN": 0.002113590637842814
+    },
+    "text": "The model predicts Cassava Mosaic Disease (CMD) with a probability of 57%. In the image, the model paid most attention to the centre of the leaf. Among the weather variables, mean solar irradiance raised the predicted probability most (by 0.2 percentage points), and total rainfall lowered it most (by 0.4 percentage points). The weather values are a regional and seasonal approximation, so this describes how the model used its inputs and does not show that the weather caused the disease."
+  },
+  {
+    "image_id": "1001749118.jpg",
+    "true": "CMD",
+    "pred": "CMD",
+    "kind": "correct",
+    "confidence": 0.9024317264556885,
+    "severity_estimate": null,
+    "region": "the outer parts of the leaf on both sides",
+    "phi": {
+      "T2M": -0.00016070902347564697,
+      "RH2M": 1.1995434761047363e-05,
+      "PRECTOTCORR": 0.000709657867749532,
+      "ALLSKY_SFC_SW_DWN": -0.0007569839557011921
+    },
+    "text": "The model predicts Cassava Mosaic Disease (CMD) with a probability of 90%. In the image, the model paid most attention to the outer parts of the leaf on both sides. Among the weather variables, total rainfall raised the predicted probability most (by 0.1 percentage points), and mean solar irradiance lowered it most (by 0.1 percentage points). The weather values are a regional and seasonal approximation, so this describes how the model used its inputs and does not show that the weather caused the disease."
+  },
+  {
+    "image_id": "1011422445.jpg",
+    "true": "CMD",
+    "pred": "CGM",
+    "kind": "wrong",
+    "confidence": 0.5901169180870056,
+    "severity_estimate": null,
+    "region": "the centre of the leaf",
+    "phi": {
+      "T2M": -0.00018818179766337084,
+      "RH2M": -0.0006926159063975019,
+      "PRECTOTCORR": 0.005160391330718994,
+      "ALLSKY_SFC_SW_DWN": -0.011776665846506754
+    },
+    "text": "The model predicts Cassava Green Mottle (CGM) with a probability of 59%. In the image, the model paid most attention to the centre of the leaf. Among the weather variables, total rainfall raised the predicted probability most (by 0.5 percentage points), and mean solar irradiance lowered it most (by 1.2 percentage points). The weather values are a regional and seasonal approximation, so this describes how the model used its inputs and does not show that the weather caused the disease."
+  },
+  {
+    "image_id": "1020387881.jpg",
+    "true": "CMD",
+    "pred": "CBB",
+    "kind": "wrong",
+    "confidence": 0.9094241857528687,
+    "severity_estimate": null,
+    "region": "the centre of the leaf",
+    "phi": {
+      "T2M": 0.000298162301381429,
+      "RH2M": 0.00028797984123229975,
+      "PRECTOTCORR": 0.00033472975095113117,
+      "ALLSKY_SFC_SW_DWN": -0.0006081263224283854
+    },
+    "text": "The model predicts Cassava Bacterial Blight (CBB) with a probability of 91%. In the image, the model paid most attention to the centre of the leaf. Among the weather variables, total rainfall raised the predicted probability most (by 0.0 percentage points), and mean solar irradiance lowered it most (by 0.1 percentage points). The weather values are a regional and seasonal approximation, so this describes how the model used its inputs and does not show that the weather caused the disease."
+  },
+  {
+    "image_id": "1060644080.jpg",
+    "true": "Healthy",
+    "pred": "Healthy",
+    "kind": "correct",
+    "confidence": 0.34696388244628906,
+    "severity_estimate": null,
+    "region": "the outer parts of the leaf on both sides",
+    "phi": {
+      "T2M": 0.0005685960253079732,
+      "RH2M": -0.0007012064258257548,
+      "PRECTOTCORR": -0.000232564906279246,
+      "ALLSKY_SFC_SW_DWN": -0.0007656440138816833
+    },
+    "text": "The model predicts Healthy (Healthy) with a probability of 35%. In the image, the model paid most attention to the outer parts of the leaf on both sides. Among the weather variables, mean temperature raised the predicted probability most (by 0.1 percentage points), and mean solar irradiance lowered it most (by 0.1 percentage points). The weather values are a regional and seasonal approximation, so this describes how the model used its inputs and does not show that the weather caused the disease."
+  },
+  {
+    "image_id": "107801790.jpg",
+    "true": "Healthy",
+    "pred": "Healthy",
+    "kind": "correct",
+    "confidence": 0.9303019642829895,
+    "severity_estimate": null,
+    "region": "the lower part of the leaf",
+    "phi": {
+      "T2M": 1.6887982686360686e-05,
+      "RH2M": 0.00018051266670227048,
+      "PRECTOTCORR": -0.0003497898578643799,
+      "ALLSKY_SFC_SW_DWN": -0.0008875330289204915
+    },
+    "text": "The model predicts Healthy (Healthy) with a probability of 93%. In the image, the model paid most attention to the lower part of the leaf. Among the weather variables, mean relative humidity raised the predicted probability most (by 0.0 percentage points), and mean solar irradiance lowered it most (by 0.1 percentage points). The weather values are a regional and seasonal approximation, so this describes how the model used its inputs and does not show that the weather caused the disease."
+  },
+  {
+    "image_id": "1033962303.jpg",
+    "true": "Healthy",
+    "pred": "CBSD",
+    "kind": "wrong",
+    "confidence": 0.4904133081436157,
+    "severity_estimate": null,
+    "region": "the outer parts of the leaf on both sides",
+    "phi": {
+      "T2M": 0.004527742664019266,
+      "RH2M": 0.0004924039045969645,
+      "PRECTOTCORR": 0.007712135712305704,
+      "ALLSKY_SFC_SW_DWN": 0.010488703846931458
+    },
+    "text": "The model predicts Cassava Brown Streak Disease (CBSD) with a probability of 49%. In the image, the model paid most attention to the outer parts of the leaf on both sides. Among the weather variables, mean solar irradiance raised the predicted probability most (by 1.0 percentage points). The weather values are a regional and seasonal approximation, so this describes how the model used its inputs and does not show that the weather caused the disease."
+  },
+  {
+    "image_id": "110359894.jpg",
+    "true": "Healthy",
+    "pred": "CGM",
+    "kind": "wrong",
+    "confidence": 0.4743346869945526,
+    "severity_estimate": null,
+    "region": "the outer parts of the leaf on both sides",
+    "phi": {
+      "T2M": 0.0017059817910194397,
+      "RH2M": -9.121249119440716e-05,
+      "PRECTOTCORR": 0.002161271870136261,
+      "ALLSKY_SFC_SW_DWN": 0.008355530599753063
+    },
+    "text": "The model predicts Cassava Green Mottle (CGM) with a probability of 47%. In the image, the model paid most attention to the outer parts of the leaf on both sides. Among the weather variables, mean solar irradiance raised the predicted probability most (by 0.8 percentage points), and mean relative humidity lowered it most (by 0.0 percentage points). The weather values are a regional and seasonal approximation, so this describes how the model used its inputs and does not show that the weather caused the disease."
+  }
+]

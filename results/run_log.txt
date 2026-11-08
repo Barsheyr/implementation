@@ -1,0 +1,249 @@
+[06:32:22] device: cuda Tesla T4 
+[06:32:22] data folder found: /kaggle/input/competitions/cassava-leaf-disease-classification
+[06:32:22] reading 21397 images and resizing to 224x224 ...
+[06:34:12] cached 21397 images in 110s; unreadable=0, exact duplicates removed=0
+[06:34:32] grading sheet (200 images) and montages written to /kaggle/working/results/severity_grading
+[06:43:10] device: cuda Tesla T4 
+[06:43:10] data folder found: /kaggle/input/competitions/cassava-leaf-disease-classification
+[06:43:10] using cached images from /kaggle/working/results/cache
+[06:43:11] no severity grades found: the severity head will not be trained and severity metrics are not reported
+[06:43:11] requesting NASA POWER daily data for ['Northern', 'Eastern', 'Central', 'Western'] ...
+[06:55:19] device: cuda Tesla T4 
+[06:55:19] data folder found: /kaggle/input/competitions/cassava-leaf-disease-classification
+[06:55:19] using cached images from /kaggle/working/results/cache
+[06:55:38] grading sheet (200 images) and montages written to /kaggle/working/results/severity_grading
+[06:57:45] device: cuda Tesla T4 
+[06:57:45] data folder found: /kaggle/input/competitions/cassava-leaf-disease-classification
+[06:57:45] using cached images from /kaggle/working/results/cache
+[06:57:46] no severity grades found: the severity head will not be trained and severity metrics are not reported
+[06:57:46] requesting NASA POWER daily data for ['Northern', 'Eastern', 'Central', 'Western'] ...
+[06:57:51] chosen settings: {'lr_stage1': 0.001, 'fusion_w': 128, 'batch_size': 32}
+[06:58:31] M0_seed42 ep1 st1 loss=1.104 val_acc=0.691 val_F1=0.579
+[06:58:46] M0_seed42 ep2 st1 loss=0.969 val_acc=0.709 val_F1=0.573
+[06:59:01] M0_seed42 ep3 st1 loss=0.927 val_acc=0.700 val_F1=0.579
+[06:59:24] M0_seed42 ep4 st2 loss=0.886 val_acc=0.792 val_F1=0.645
+[06:59:46] M0_seed42 ep5 st2 loss=0.772 val_acc=0.805 val_F1=0.675
+[07:00:08] M0_seed42 ep6 st2 loss=0.697 val_acc=0.781 val_F1=0.660
+[07:00:31] M0_seed42 ep7 st2 loss=0.640 val_acc=0.782 val_F1=0.674
+[07:00:53] M0_seed42 ep8 st2 loss=0.586 val_acc=0.800 val_F1=0.687
+[07:01:15] M0_seed42 ep9 st2 loss=0.526 val_acc=0.813 val_F1=0.694
+[07:01:16] M0_seed42: test acc=0.7953 macro-F1=0.6637
+[07:01:33] M1_seed42 ep1 st1 loss=1.112 val_acc=0.688 val_F1=0.576
+[07:01:49] M1_seed42 ep2 st1 loss=0.968 val_acc=0.702 val_F1=0.576
+[07:02:06] M1_seed42 ep3 st1 loss=0.926 val_acc=0.696 val_F1=0.581
+[07:02:28] M1_seed42 ep4 st2 loss=0.887 val_acc=0.797 val_F1=0.660
+[07:02:50] M1_seed42 ep5 st2 loss=0.769 val_acc=0.800 val_F1=0.669
+[07:03:12] M1_seed42 ep6 st2 loss=0.698 val_acc=0.793 val_F1=0.668
+[07:03:34] M1_seed42 ep7 st2 loss=0.635 val_acc=0.788 val_F1=0.681
+[07:03:57] M1_seed42 ep8 st2 loss=0.583 val_acc=0.806 val_F1=0.687
+[07:04:19] M1_seed42 ep9 st2 loss=0.522 val_acc=0.817 val_F1=0.705
+[07:04:20] M1_seed42: test acc=0.7986 macro-F1=0.6694
+[07:04:37] M2_seed42 ep1 st1 loss=1.113 val_acc=0.686 val_F1=0.574
+[07:04:53] M2_seed42 ep2 st1 loss=0.969 val_acc=0.708 val_F1=0.578
+[07:05:09] M2_seed42 ep3 st1 loss=0.926 val_acc=0.699 val_F1=0.581
+[07:05:32] M2_seed42 ep4 st2 loss=0.888 val_acc=0.794 val_F1=0.654
+[07:05:54] M2_seed42 ep5 st2 loss=0.769 val_acc=0.788 val_F1=0.656
+[07:06:16] M2_seed42 ep6 st2 loss=0.696 val_acc=0.782 val_F1=0.653
+[07:06:38] M2_seed42 ep7 st2 loss=0.636 val_acc=0.795 val_F1=0.687
+[07:07:01] M2_seed42 ep8 st2 loss=0.588 val_acc=0.797 val_F1=0.680
+[07:07:23] M2_seed42 ep9 st2 loss=0.520 val_acc=0.807 val_F1=0.696
+[07:07:24] M2_seed42: test acc=0.7813 macro-F1=0.6609
+[07:07:39] SHAP exact values done; check: {'additivity_max_abs_error': 3.469446951953614e-18, 'kernel_explainer_checked': 3, 'max_abs_diff': 2.6822090566386986e-08}
+[07:07:55] finished; results zipped to /kaggle/working/results.zip (10.1 min)
+[07:44:25] device: cuda Tesla T4 
+[07:44:25] data folder found: /kaggle/input/competitions/cassava-leaf-disease-classification
+[07:44:25] using cached images from /kaggle/working/results/cache
+[07:44:26] no severity grades found: the severity head will not be trained and severity metrics are not reported
+[07:44:26] requesting NASA POWER daily data for ['Northern', 'Eastern', 'Central', 'Western'] ...
+[07:45:09] tune lr=0.001 fw=128 ep1 st1 loss=1.112 val_acc=0.688 val_F1=0.576
+[07:45:24] tune lr=0.001 fw=128 ep2 st1 loss=0.968 val_acc=0.702 val_F1=0.576
+[07:45:47] tune lr=0.001 fw=128 ep3 st2 loss=0.919 val_acc=0.771 val_F1=0.654
+[07:46:08] tune lr=0.001 fw=128 ep4 st2 loss=0.781 val_acc=0.807 val_F1=0.672
+[07:46:30] tune lr=0.001 fw=128 ep5 st2 loss=0.712 val_acc=0.804 val_F1=0.683
+[07:46:46] tune lr=0.001 fw=256 ep1 st1 loss=1.111 val_acc=0.684 val_F1=0.573
+[07:47:03] tune lr=0.001 fw=256 ep2 st1 loss=0.972 val_acc=0.686 val_F1=0.557
+[07:47:25] tune lr=0.001 fw=256 ep3 st2 loss=0.916 val_acc=0.757 val_F1=0.646
+[07:47:47] tune lr=0.001 fw=256 ep4 st2 loss=0.778 val_acc=0.808 val_F1=0.678
+[07:48:09] tune lr=0.001 fw=256 ep5 st2 loss=0.709 val_acc=0.810 val_F1=0.685
+[07:48:26] tune lr=0.0003 fw=128 ep1 st1 loss=1.136 val_acc=0.680 val_F1=0.567
+[07:48:43] tune lr=0.0003 fw=128 ep2 st1 loss=0.970 val_acc=0.699 val_F1=0.579
+[07:49:05] tune lr=0.0003 fw=128 ep3 st2 loss=0.924 val_acc=0.764 val_F1=0.654
+[07:49:27] tune lr=0.0003 fw=128 ep4 st2 loss=0.781 val_acc=0.810 val_F1=0.681
+[07:49:49] tune lr=0.0003 fw=128 ep5 st2 loss=0.717 val_acc=0.806 val_F1=0.691
+[07:50:06] tune lr=0.0003 fw=256 ep1 st1 loss=1.126 val_acc=0.677 val_F1=0.566
+[07:50:22] tune lr=0.0003 fw=256 ep2 st1 loss=0.966 val_acc=0.696 val_F1=0.579
+[07:50:44] tune lr=0.0003 fw=256 ep3 st2 loss=0.924 val_acc=0.766 val_F1=0.652
+[07:51:06] tune lr=0.0003 fw=256 ep4 st2 loss=0.780 val_acc=0.809 val_F1=0.678
+[07:51:29] tune lr=0.0003 fw=256 ep5 st2 loss=0.715 val_acc=0.807 val_F1=0.687
+[07:51:29] chosen settings: {'lr_stage1': 0.0003, 'fusion_w': 128, 'batch_size': 32}
+[07:51:45] M0_seed42 ep1 st1 loss=1.125 val_acc=0.669 val_F1=0.559
+[07:52:01] M0_seed42 ep2 st1 loss=0.968 val_acc=0.702 val_F1=0.585
+[07:52:18] M0_seed42 ep3 st1 loss=0.925 val_acc=0.699 val_F1=0.581
+[07:52:40] M0_seed42 ep4 st2 loss=0.894 val_acc=0.793 val_F1=0.646
+[07:53:02] M0_seed42 ep5 st2 loss=0.781 val_acc=0.801 val_F1=0.675
+[07:53:24] M0_seed42 ep6 st2 loss=0.705 val_acc=0.791 val_F1=0.670
+[07:53:46] M0_seed42 ep7 st2 loss=0.642 val_acc=0.800 val_F1=0.696
+[07:54:09] M0_seed42 ep8 st2 loss=0.588 val_acc=0.812 val_F1=0.700
+[07:54:31] M0_seed42 ep9 st2 loss=0.524 val_acc=0.810 val_F1=0.687
+[07:54:53] M0_seed42 ep10 st2 loss=0.481 val_acc=0.801 val_F1=0.690
+[07:55:15] M0_seed42 ep11 st2 loss=0.429 val_acc=0.804 val_F1=0.708
+[07:55:16] M0_seed42: test acc=0.7813 macro-F1=0.6652
+[07:55:33] M1_seed42 ep1 st1 loss=1.136 val_acc=0.680 val_F1=0.567
+[07:55:49] M1_seed42 ep2 st1 loss=0.970 val_acc=0.699 val_F1=0.579
+[07:56:06] M1_seed42 ep3 st1 loss=0.926 val_acc=0.698 val_F1=0.585
+[07:56:28] M1_seed42 ep4 st2 loss=0.894 val_acc=0.791 val_F1=0.645
+[07:56:50] M1_seed42 ep5 st2 loss=0.778 val_acc=0.794 val_F1=0.669
+[07:57:12] M1_seed42 ep6 st2 loss=0.705 val_acc=0.793 val_F1=0.670
+[07:57:34] M1_seed42 ep7 st2 loss=0.642 val_acc=0.799 val_F1=0.694
+[07:57:57] M1_seed42 ep8 st2 loss=0.587 val_acc=0.810 val_F1=0.696
+[07:58:19] M1_seed42 ep9 st2 loss=0.525 val_acc=0.813 val_F1=0.690
+[07:58:41] M1_seed42 ep10 st2 loss=0.484 val_acc=0.806 val_F1=0.695
+[07:59:03] M1_seed42 ep11 st2 loss=0.426 val_acc=0.806 val_F1=0.701
+[07:59:04] M1_seed42: test acc=0.7893 macro-F1=0.6718
+[07:59:21] M2_seed42 ep1 st1 loss=1.138 val_acc=0.682 val_F1=0.570
+[07:59:37] M2_seed42 ep2 st1 loss=0.969 val_acc=0.691 val_F1=0.571
+[07:59:54] M2_seed42 ep3 st1 loss=0.925 val_acc=0.700 val_F1=0.584
+[08:00:16] M2_seed42 ep4 st2 loss=0.892 val_acc=0.794 val_F1=0.648
+[08:00:38] M2_seed42 ep5 st2 loss=0.777 val_acc=0.800 val_F1=0.677
+[08:01:00] M2_seed42 ep6 st2 loss=0.704 val_acc=0.793 val_F1=0.671
+[08:01:22] M2_seed42 ep7 st2 loss=0.641 val_acc=0.800 val_F1=0.693
+[08:01:44] M2_seed42 ep8 st2 loss=0.588 val_acc=0.808 val_F1=0.696
+[08:02:07] M2_seed42 ep9 st2 loss=0.525 val_acc=0.807 val_F1=0.680
+[08:02:29] M2_seed42 ep10 st2 loss=0.485 val_acc=0.801 val_F1=0.688
+[08:02:51] M2_seed42 ep11 st2 loss=0.428 val_acc=0.800 val_F1=0.696
+[08:02:52] M2_seed42: test acc=0.7794 macro-F1=0.6699
+[08:03:44] device: cuda Tesla T4 
+[08:03:44] data folder found: /kaggle/input/competitions/cassava-leaf-disease-classification
+[08:03:44] using cached images from /kaggle/working/results/cache
+[08:03:45] no severity grades found: the severity head will not be trained and severity metrics are not reported
+[08:03:45] requesting NASA POWER daily data for ['Northern', 'Eastern', 'Central', 'Western'] ...
+[08:04:29] tune lr=0.001 fw=128 ep1 st1 loss=1.112 val_acc=0.688 val_F1=0.576
+[08:04:46] tune lr=0.001 fw=128 ep2 st1 loss=0.968 val_acc=0.702 val_F1=0.576
+[08:05:11] tune lr=0.001 fw=128 ep3 st2 loss=0.919 val_acc=0.771 val_F1=0.654
+[08:05:33] tune lr=0.001 fw=128 ep4 st2 loss=0.781 val_acc=0.807 val_F1=0.672
+[08:05:55] tune lr=0.001 fw=128 ep5 st2 loss=0.712 val_acc=0.804 val_F1=0.683
+[08:06:11] tune lr=0.001 fw=256 ep1 st1 loss=1.111 val_acc=0.684 val_F1=0.573
+[08:06:28] tune lr=0.001 fw=256 ep2 st1 loss=0.972 val_acc=0.686 val_F1=0.557
+[08:06:50] tune lr=0.001 fw=256 ep3 st2 loss=0.916 val_acc=0.757 val_F1=0.646
+[08:07:12] tune lr=0.001 fw=256 ep4 st2 loss=0.778 val_acc=0.808 val_F1=0.678
+[08:07:34] tune lr=0.001 fw=256 ep5 st2 loss=0.709 val_acc=0.810 val_F1=0.685
+[08:07:51] tune lr=0.0003 fw=128 ep1 st1 loss=1.136 val_acc=0.680 val_F1=0.567
+[08:08:07] tune lr=0.0003 fw=128 ep2 st1 loss=0.970 val_acc=0.699 val_F1=0.579
+[08:08:29] tune lr=0.0003 fw=128 ep3 st2 loss=0.924 val_acc=0.764 val_F1=0.654
+[08:08:52] tune lr=0.0003 fw=128 ep4 st2 loss=0.781 val_acc=0.810 val_F1=0.681
+[08:09:14] tune lr=0.0003 fw=128 ep5 st2 loss=0.717 val_acc=0.806 val_F1=0.691
+[08:09:30] tune lr=0.0003 fw=256 ep1 st1 loss=1.126 val_acc=0.677 val_F1=0.566
+[08:09:47] tune lr=0.0003 fw=256 ep2 st1 loss=0.966 val_acc=0.696 val_F1=0.579
+[08:10:09] tune lr=0.0003 fw=256 ep3 st2 loss=0.924 val_acc=0.766 val_F1=0.652
+[08:10:31] tune lr=0.0003 fw=256 ep4 st2 loss=0.780 val_acc=0.809 val_F1=0.678
+[08:10:53] tune lr=0.0003 fw=256 ep5 st2 loss=0.715 val_acc=0.807 val_F1=0.687
+[08:10:54] chosen settings: {'lr_stage1': 0.0003, 'fusion_w': 128, 'batch_size': 32}
+[08:11:10] M0_seed42 ep1 st1 loss=1.125 val_acc=0.669 val_F1=0.559
+[08:11:26] M0_seed42 ep2 st1 loss=0.968 val_acc=0.702 val_F1=0.585
+[08:11:42] M0_seed42 ep3 st1 loss=0.925 val_acc=0.699 val_F1=0.581
+[08:12:05] M0_seed42 ep4 st2 loss=0.894 val_acc=0.793 val_F1=0.646
+[08:12:27] M0_seed42 ep5 st2 loss=0.781 val_acc=0.801 val_F1=0.675
+[08:12:49] M0_seed42 ep6 st2 loss=0.705 val_acc=0.791 val_F1=0.670
+[08:13:11] M0_seed42 ep7 st2 loss=0.642 val_acc=0.800 val_F1=0.696
+[08:13:33] M0_seed42 ep8 st2 loss=0.588 val_acc=0.812 val_F1=0.700
+[08:13:55] M0_seed42 ep9 st2 loss=0.524 val_acc=0.810 val_F1=0.687
+[08:14:17] M0_seed42 ep10 st2 loss=0.481 val_acc=0.801 val_F1=0.690
+[08:14:40] M0_seed42 ep11 st2 loss=0.429 val_acc=0.804 val_F1=0.708
+[08:14:41] M0_seed42: test acc=0.7813 macro-F1=0.6652
+[08:14:58] M1_seed42 ep1 st1 loss=1.136 val_acc=0.680 val_F1=0.567
+[08:15:14] M1_seed42 ep2 st1 loss=0.970 val_acc=0.699 val_F1=0.579
+[08:15:30] M1_seed42 ep3 st1 loss=0.926 val_acc=0.698 val_F1=0.585
+[08:15:52] M1_seed42 ep4 st2 loss=0.894 val_acc=0.791 val_F1=0.645
+[08:16:15] M1_seed42 ep5 st2 loss=0.778 val_acc=0.794 val_F1=0.669
+[08:16:37] M1_seed42 ep6 st2 loss=0.705 val_acc=0.793 val_F1=0.670
+[08:16:59] M1_seed42 ep7 st2 loss=0.642 val_acc=0.799 val_F1=0.694
+[08:17:21] M1_seed42 ep8 st2 loss=0.587 val_acc=0.810 val_F1=0.696
+[08:17:44] M1_seed42 ep9 st2 loss=0.525 val_acc=0.813 val_F1=0.690
+[08:18:06] M1_seed42 ep10 st2 loss=0.484 val_acc=0.806 val_F1=0.695
+[08:18:28] M1_seed42 ep11 st2 loss=0.426 val_acc=0.806 val_F1=0.701
+[08:18:29] M1_seed42: test acc=0.7893 macro-F1=0.6718
+[08:18:46] M2_seed42 ep1 st1 loss=1.138 val_acc=0.682 val_F1=0.570
+[08:19:02] M2_seed42 ep2 st1 loss=0.969 val_acc=0.691 val_F1=0.571
+[08:19:19] M2_seed42 ep3 st1 loss=0.925 val_acc=0.700 val_F1=0.584
+[08:19:41] M2_seed42 ep4 st2 loss=0.892 val_acc=0.794 val_F1=0.648
+[08:20:03] M2_seed42 ep5 st2 loss=0.777 val_acc=0.800 val_F1=0.677
+[08:20:25] M2_seed42 ep6 st2 loss=0.704 val_acc=0.793 val_F1=0.671
+[08:20:47] M2_seed42 ep7 st2 loss=0.641 val_acc=0.800 val_F1=0.693
+[08:21:09] M2_seed42 ep8 st2 loss=0.588 val_acc=0.808 val_F1=0.696
+[08:21:32] M2_seed42 ep9 st2 loss=0.525 val_acc=0.807 val_F1=0.680
+[08:21:54] M2_seed42 ep10 st2 loss=0.485 val_acc=0.801 val_F1=0.688
+[08:22:16] M2_seed42 ep11 st2 loss=0.428 val_acc=0.800 val_F1=0.696
+[08:22:17] M2_seed42: test acc=0.7794 macro-F1=0.6699
+[08:22:34] M0_seed7 ep1 st1 loss=1.136 val_acc=0.657 val_F1=0.524
+[08:22:50] M0_seed7 ep2 st1 loss=0.976 val_acc=0.650 val_F1=0.539
+[08:23:07] M0_seed7 ep3 st1 loss=0.929 val_acc=0.681 val_F1=0.564
+[08:23:29] M0_seed7 ep4 st2 loss=0.903 val_acc=0.679 val_F1=0.599
+[08:23:51] M0_seed7 ep5 st2 loss=0.779 val_acc=0.776 val_F1=0.665
+[08:24:13] M0_seed7 ep6 st2 loss=0.708 val_acc=0.775 val_F1=0.666
+[08:24:35] M0_seed7 ep7 st2 loss=0.656 val_acc=0.759 val_F1=0.614
+[08:24:57] M0_seed7 ep8 st2 loss=0.590 val_acc=0.776 val_F1=0.679
+[08:25:20] M0_seed7 ep9 st2 loss=0.534 val_acc=0.810 val_F1=0.712
+[08:25:42] M0_seed7 ep10 st2 loss=0.469 val_acc=0.766 val_F1=0.672
+[08:26:04] M0_seed7 ep11 st2 loss=0.429 val_acc=0.794 val_F1=0.680
+[08:26:05] M0_seed7: test acc=0.7967 macro-F1=0.6806
+[08:26:22] M1_seed7 ep1 st1 loss=1.131 val_acc=0.664 val_F1=0.530
+[08:26:38] M1_seed7 ep2 st1 loss=0.975 val_acc=0.659 val_F1=0.545
+[08:26:54] M1_seed7 ep3 st1 loss=0.927 val_acc=0.679 val_F1=0.564
+[08:27:17] M1_seed7 ep4 st2 loss=0.903 val_acc=0.719 val_F1=0.621
+[08:27:39] M1_seed7 ep5 st2 loss=0.777 val_acc=0.782 val_F1=0.665
+[08:28:01] M1_seed7 ep6 st2 loss=0.707 val_acc=0.765 val_F1=0.659
+[08:28:23] M1_seed7 ep7 st2 loss=0.653 val_acc=0.760 val_F1=0.607
+[08:28:45] M1_seed7 ep8 st2 loss=0.590 val_acc=0.767 val_F1=0.665
+[08:29:07] M1_seed7 ep9 st2 loss=0.530 val_acc=0.805 val_F1=0.706
+[08:29:30] M1_seed7 ep10 st2 loss=0.466 val_acc=0.743 val_F1=0.655
+[08:29:52] M1_seed7 ep11 st2 loss=0.428 val_acc=0.805 val_F1=0.695
+[08:29:53] M1_seed7: test acc=0.7911 macro-F1=0.6795
+[08:30:09] M2_seed7 ep1 st1 loss=1.131 val_acc=0.663 val_F1=0.528
+[08:30:26] M2_seed7 ep2 st1 loss=0.975 val_acc=0.662 val_F1=0.548
+[08:30:42] M2_seed7 ep3 st1 loss=0.926 val_acc=0.681 val_F1=0.564
+[08:31:05] M2_seed7 ep4 st2 loss=0.903 val_acc=0.684 val_F1=0.601
+[08:31:27] M2_seed7 ep5 st2 loss=0.777 val_acc=0.783 val_F1=0.665
+[08:31:49] M2_seed7 ep6 st2 loss=0.706 val_acc=0.773 val_F1=0.665
+[08:32:11] M2_seed7 ep7 st2 loss=0.651 val_acc=0.765 val_F1=0.621
+[08:32:33] M2_seed7 ep8 st2 loss=0.586 val_acc=0.770 val_F1=0.668
+[08:32:55] M2_seed7 ep9 st2 loss=0.530 val_acc=0.807 val_F1=0.706
+[08:33:18] M2_seed7 ep10 st2 loss=0.461 val_acc=0.761 val_F1=0.667
+[08:33:40] M2_seed7 ep11 st2 loss=0.425 val_acc=0.806 val_F1=0.688
+[08:33:41] M2_seed7: test acc=0.7935 macro-F1=0.6827
+[08:33:57] M0_seed2024 ep1 st1 loss=1.133 val_acc=0.630 val_F1=0.517
+[08:34:14] M0_seed2024 ep2 st1 loss=0.968 val_acc=0.619 val_F1=0.535
+[08:34:30] M0_seed2024 ep3 st1 loss=0.918 val_acc=0.723 val_F1=0.592
+[08:34:52] M0_seed2024 ep4 st2 loss=0.897 val_acc=0.738 val_F1=0.639
+[08:35:14] M0_seed2024 ep5 st2 loss=0.778 val_acc=0.753 val_F1=0.656
+[08:35:36] M0_seed2024 ep6 st2 loss=0.706 val_acc=0.763 val_F1=0.669
+[08:35:59] M0_seed2024 ep7 st2 loss=0.647 val_acc=0.811 val_F1=0.689
+[08:36:21] M0_seed2024 ep8 st2 loss=0.577 val_acc=0.785 val_F1=0.689
+[08:36:43] M0_seed2024 ep9 st2 loss=0.529 val_acc=0.783 val_F1=0.681
+[08:37:05] M0_seed2024 ep10 st2 loss=0.473 val_acc=0.807 val_F1=0.690
+[08:37:27] M0_seed2024 ep11 st2 loss=0.424 val_acc=0.808 val_F1=0.694
+[08:37:29] M0_seed2024: test acc=0.7888 macro-F1=0.6627
+[08:37:45] M1_seed2024 ep1 st1 loss=1.143 val_acc=0.619 val_F1=0.506
+[08:38:01] M1_seed2024 ep2 st1 loss=0.971 val_acc=0.612 val_F1=0.537
+[08:38:18] M1_seed2024 ep3 st1 loss=0.921 val_acc=0.712 val_F1=0.584
+[08:38:40] M1_seed2024 ep4 st2 loss=0.900 val_acc=0.733 val_F1=0.631
+[08:39:02] M1_seed2024 ep5 st2 loss=0.779 val_acc=0.759 val_F1=0.666
+[08:39:24] M1_seed2024 ep6 st2 loss=0.707 val_acc=0.755 val_F1=0.663
+[08:39:46] M1_seed2024 ep7 st2 loss=0.644 val_acc=0.812 val_F1=0.693
+[08:40:09] M1_seed2024 ep8 st2 loss=0.579 val_acc=0.794 val_F1=0.694
+[08:40:31] M1_seed2024 ep9 st2 loss=0.531 val_acc=0.789 val_F1=0.681
+[08:40:53] M1_seed2024 ep10 st2 loss=0.475 val_acc=0.815 val_F1=0.698
+[08:41:15] M1_seed2024 ep11 st2 loss=0.426 val_acc=0.811 val_F1=0.696
+[08:41:17] M1_seed2024: test acc=0.7832 macro-F1=0.6632
+[08:41:33] M2_seed2024 ep1 st1 loss=1.143 val_acc=0.625 val_F1=0.507
+[08:41:49] M2_seed2024 ep2 st1 loss=0.973 val_acc=0.612 val_F1=0.534
+[08:42:06] M2_seed2024 ep3 st1 loss=0.922 val_acc=0.707 val_F1=0.579
+[08:42:28] M2_seed2024 ep4 st2 loss=0.901 val_acc=0.740 val_F1=0.633
+[08:42:50] M2_seed2024 ep5 st2 loss=0.780 val_acc=0.757 val_F1=0.663
+[08:43:12] M2_seed2024 ep6 st2 loss=0.704 val_acc=0.756 val_F1=0.664
+[08:43:35] M2_seed2024 ep7 st2 loss=0.645 val_acc=0.812 val_F1=0.692
+[08:43:57] M2_seed2024 ep8 st2 loss=0.580 val_acc=0.793 val_F1=0.692
+[08:44:19] M2_seed2024 ep9 st2 loss=0.532 val_acc=0.775 val_F1=0.667
+[08:44:41] M2_seed2024 ep10 st2 loss=0.475 val_acc=0.809 val_F1=0.690
+[08:44:41] M2_seed2024 early stop (patience 3)
+[08:44:43] M2_seed2024: test acc=0.8089 macro-F1=0.6946
+[08:44:56] SHAP exact values done; check: {'additivity_max_abs_error': 2.6020852139652106e-18, 'kernel_explainer_checked': 3, 'max_abs_diff': 5.463759091862974e-08}

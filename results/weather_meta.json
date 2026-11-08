@@ -1,0 +1,72 @@
+{
+  "zones": {
+    "Northern": {
+      "town": "Gulu",
+      "latitude": 2.78,
+      "longitude": 32.3,
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CRH2M%2CPRECTOTCORR%2CALLSKY_SFC_SW_DWN&community=AG&latitude=2.78&longitude=32.3&start=20180101&end=20191231&format=JSON",
+      "n_days": 730,
+      "n_days_with_missing_value": 0
+    },
+    "Eastern": {
+      "town": "Soroti",
+      "latitude": 1.71,
+      "longitude": 33.61,
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CRH2M%2CPRECTOTCORR%2CALLSKY_SFC_SW_DWN&community=AG&latitude=1.71&longitude=33.61&start=20180101&end=20191231&format=JSON",
+      "n_days": 730,
+      "n_days_with_missing_value": 0
+    },
+    "Central": {
+      "town": "Masaka",
+      "latitude": -0.34,
+      "longitude": 31.73,
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CRH2M%2CPRECTOTCORR%2CALLSKY_SFC_SW_DWN&community=AG&latitude=-0.34&longitude=31.73&start=20180101&end=20191231&format=JSON",
+      "n_days": 730,
+      "n_days_with_missing_value": 0
+    },
+    "Western": {
+      "town": "Mbarara",
+      "latitude": -0.61,
+      "longitude": 30.66,
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CRH2M%2CPRECTOTCORR%2CALLSKY_SFC_SW_DWN&community=AG&latitude=-0.61&longitude=30.66&start=20180101&end=20191231&format=JSON",
+      "n_days": 730,
+      "n_days_with_missing_value": 0
+    }
+  },
+  "period": [
+    "20180101",
+    "20191231"
+  ],
+  "api": "https://power.larc.nasa.gov/api/temporal/daily/point",
+  "parameters": [
+    "T2M",
+    "RH2M",
+    "PRECTOTCORR",
+    "ALLSKY_SFC_SW_DWN"
+  ],
+  "mock": false,
+  "fetch_time_utc": "2026-10-14T08:03:45.288730Z",
+  "missing_value_code": -999,
+  "seasons": {
+    "MAM": [
+      3,
+      4,
+      5
+    ],
+    "JJA": [
+      6,
+      7,
+      8
+    ],
+    "SON": [
+      9,
+      10,
+      11
+    ],
+    "DJF": [
+      12,
+      1,
+      2
+    ]
+  }
+}
